@@ -1,0 +1,1 @@
+Radix is a base theme for [Drupal](http://drupal.org) and [Backdrop CMS](http://backdropcms.org).
