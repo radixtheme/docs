@@ -1,0 +1,6 @@
+site_name: Radix documentation
+theme: readthedocs
+repo_url: https://github.com/radixtheme/docs
+include_search: true
+pages:
+- Home: index.md
