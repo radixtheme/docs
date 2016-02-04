@@ -60,7 +60,7 @@ When you run gulp you should see local and external access urls as shown below. 
 
 Older versions of Radix used **Compass** gems to compile **Sass**.
   
-To update to the **Gulp** version, see the guide [here](http://www.radixtheme.org/articles/update-rc4-to-3/).
+To upgrade to the **Gulp** version, use the following Drush command: `drush radix-upgrade-gulp theme_name`.
 
 # Support
 
