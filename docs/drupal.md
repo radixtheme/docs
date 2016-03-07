@@ -56,6 +56,19 @@ When you run gulp you should see local and external access urls as shown below. 
 
 ![Screenshot](images/radix-gulp-browsersync.png)
 
+# Bower
+
+#### How to add bower components to your subtheme?
+
+1. Go to the root of your subtheme: `cd /themes/subtheme`.
+2. Run `bower install`. Example `bower install imagesloaded --save`.
+
+This command will install the bower component and update your bower.json file.
+
+#### Bower components in git?
+
+Need to commit your bower components in your git repo? Edit `.gitignore` file for your subtheme and remove `bower_components`.
+
 # Upgrade
 
 Older versions of Radix used **Compass** gems to compile **Sass**.
