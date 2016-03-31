@@ -17,9 +17,7 @@ Documentation for the Radix theme for Drupal.
 5. Update browserSyncProxy in /path/to/subtheme/config.json.
 6. Run gulp to watch for changes: `gulp`.
 
-!!! note
-
-    If `drush radix` is failing, run `drush cc drush` and try again.
+If `drush radix` is failing, run `drush cc drush` and try again.
 
 ## Custom subtheme
 Customize your subtheme using options. To see a list of options, run: `drush radix --help`.
@@ -72,7 +70,7 @@ Need to commit your bower components in your git repo? Edit `.gitignore` file fo
 # Upgrade
 
 Older versions of Radix used **Compass** gems to compile **Sass**.
-  
+
 To upgrade to the **Gulp** version, use the following Drush command: `drush radix-upgrade-33 theme_name`.
 
 # Support
