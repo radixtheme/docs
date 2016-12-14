@@ -6,9 +6,19 @@ Documentation for the Radix theme for Drupal.
 2. [Gulp](http://gulpjs.com) - `npm install gulp -g`
 3. [Bower](http://bower.io/) - `npm install bower -g`
 4. [Drush](http://drush.org) - [Read a guide on how to install Drush here](http://www.drush.org/en/master/install/).
-5. [jQuery 1.7+](http://drupal.org/project/jquery_update) - Radix needs jQuery 1.7. You can install jQuery 1.7 via [jquery_update](http://drupal.org/project/jquery_update) module or [jquery_multi](http://drupal.org/project/jqmulti) module.
+5. [jQuery 1.7+](http://drupal.org/project/jquery_update) - Radix needs jQuery 1.7 for Drupal 7. You can install jQuery 1.7 via [jquery_update](http://drupal.org/project/jquery_update) module or [jquery_multi](http://drupal.org/project/jqmulti) module.
 
-# Installation
+## Drupal 8
+
+1. Download and enable radix: `drush dl radix; drush en radix -y; drush config-set system.theme default radix -y`.
+2. Create a subtheme: `drush cc drush; drush radix "SUBTHEME NAME"`.
+3. Set default theme: `drush en SUBTHEME_NAME -y; drush config-set system.theme default SUBTHEME_NAME -y`.
+4. Install required modules: `cd /path/to/SUBTHEME_NAME; npm run setup;`.
+5. Update proxy in `/path/to/SUBTHEME_NAME/config.json`.
+6. Watch: `gulp`.
+
+
+## Drupal 7
 
 1. Download and enable Radix: `drush en radix -y; drush vset theme_default radix`.
 2. Create a subtheme: `drush cc all; drush radix "Subtheme"`.
