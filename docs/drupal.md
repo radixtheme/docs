@@ -73,6 +73,44 @@ Older versions of Radix used **Compass** gems to compile **Sass**.
 
 To upgrade to the **Gulp** version, use the following Drush command: `drush radix-upgrade-33 theme_name`.
 
+# FAQs
+
+#### How to disable Drupal cache during development?
+
+* Step 1: Uncomment the following lines in your `settings.php` file:
+
+```
+if (file_exists(__DIR__ . '/settings.local.php')) {
+  include __DIR__ . '/settings.local.php';
+}
+```
+
+* Step 2: Copy `example.settings.local.php` to `sites/default` and rename it to `settings.local.php`.
+* Step 3: In `settings.local.php`, replace the following line `$settings['container_yamls'][] = DRUPAL_ROOT . '/sites/development.services.yml';` with `$settings['container_yamls'][] = DRUPAL_ROOT . '/sites/default/local.services.yml';`.
+* Step 4: Disable the render cache by uncommenting the following line: `$settings['cache']['bins']['render'] = 'cache.backend.null';`.
+* Step 5: Disable the Dynamic Page Cache by uncommenting the following line: `$settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';`.
+* Step 6: Copy `development.services.yml` to `local.services.yml`.
+* Step 7: Add the following in your local.services.yml`:
+```
+# Local development services.
+#
+# To activate this feature, follow the instructions at the top of the
+# 'example.settings.local.php' file, which sits next to this file.
+services:
+  cache.backend.null:
+    class: Drupal\Core\Cache\NullBackendFactory
+parameters:
+  twig.config:
+    debug: true
+    cache: false
+```
+
+See examples that you can copy and paste:
+
+* settings.local.php: https://gist.github.com/arshad/ce321088195b0834dfbd1dc92e585d99
+* local.services.yml: https://gist.github.com/arshad/f36883a614bb849984ce7b0046f7c677
+
+
 # Support
 
 1. Create an issue on [drupal.org](https://www.drupal.org/project/issues/radix).
