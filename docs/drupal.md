@@ -87,7 +87,7 @@ To upgrade to the **Gulp** version, use the following Drush command: `drush radi
 
 #### How to disable Drupal cache during development?
 
-* Step 1: Uncomment the following lines in your `settings.php` file:
+* **Step 1**: Uncomment the following lines in your `settings.php` file:
 
 ```
 if (file_exists(__DIR__ . '/settings.local.php')) {
@@ -95,12 +95,12 @@ if (file_exists(__DIR__ . '/settings.local.php')) {
 }
 ```
 
-* Step 2: Copy `example.settings.local.php` to `sites/default` and rename it to `settings.local.php`.
-* Step 3: In `settings.local.php`, replace the following line `$settings['container_yamls'][] = DRUPAL_ROOT . '/sites/development.services.yml';` with `$settings['container_yamls'][] = DRUPAL_ROOT . '/sites/default/local.services.yml';`.
-* Step 4: Disable the render cache by uncommenting the following line: `$settings['cache']['bins']['render'] = 'cache.backend.null';`.
-* Step 5: Disable the Dynamic Page Cache by uncommenting the following line: `$settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';`.
-* Step 6: Copy `development.services.yml` to `local.services.yml`.
-* Step 7: Add the following in your local.services.yml`:
+* **Step 2**: Copy `example.settings.local.php` to `sites/default` and rename it to `settings.local.php`.
+* **Step 3**: In `settings.local.php`, replace the following line `$settings['container_yamls'][] = DRUPAL_ROOT . '/sites/development.services.yml';` with `$settings['container_yamls'][] = DRUPAL_ROOT . '/sites/default/local.services.yml';`.
+* **Step 4**: Disable the render cache by uncommenting the following line: `$settings['cache']['bins']['render'] = 'cache.backend.null';`.
+* **Step 5**: Disable the Dynamic Page Cache by uncommenting the following line: `$settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';`.
+* **Step 6**: Copy `development.services.yml` to `local.services.yml`.
+* **Step 7**: Add the following in your local.services.yml`:
 ```
 # Local development services.
 #
@@ -114,6 +114,7 @@ parameters:
     debug: true
     cache: false
 ```
+* **Step 8**: Rebuild your cache: `drush cr`;
 
 See examples that you can copy and paste:
 
