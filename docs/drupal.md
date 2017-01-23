@@ -64,6 +64,41 @@ When you run gulp you should see local and external access urls as shown below. 
 
 ![Screenshot](images/radix-gulp-browsersync.png)
 
+# Responsive theming using `breakpoint`.
+
+Radix follows the `mobile-first` convention for responsive theming. To help with that, Radix provides a `breakpoint` mixin. Here's how you can use the `breakpoint` mixin to style the body for different breakpoints:
+
+```
+body {
+  background: red; // Body will have background: red for all xs devices.
+  
+  @include breakpoint(sm) {
+    background: blue; // As from sm devices, the background will be blue.
+  }
+  
+  @include breakpoint(md) {
+    background: yelllow; // Yellow background for md devices.
+  }
+  
+  @include breakpoint(lg) {
+    background: green; // Green background for lg devices.
+  }
+}
+```
+
+Another example with different style for sm and md devices:
+
+```
+body {
+  background: red; // Body will have background: red for all xs and sm devices.
+  
+  @include breakpoint(md) {
+    background: blue; // Blue background for md and lg devices.
+  }
+}
+```
+
+
 # Bower
 
 ##### How to add bower components to your subtheme?
