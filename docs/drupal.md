@@ -86,7 +86,7 @@ body {
 }
 ```
 
-Another example with different style for sm and md devices:
+Example with different style for sm and md devices:
 
 ```
 body {
@@ -98,6 +98,21 @@ body {
 }
 ```
 
+Example with a stacked list on mobile and inline list on desktop:
+
+```
+ul.menu {
+  
+  li {
+    margin: 0 0 10px;
+    
+    @include breakpoint(md) {
+      float: left;
+      margin: 0 5px;
+    }
+  }
+}
+```
 
 # Bower
 
