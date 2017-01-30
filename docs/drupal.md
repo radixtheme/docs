@@ -44,6 +44,8 @@ Customize your subtheme using options. To see a list of options, run: `drush rad
 **bootswatch** - If you want to use a [Bootswatch](http://bootswatch.com) theme, use it as follows. See the section on Bootswatch for more details.
 `drush radix "Name of theme" --bootswatch=cerulean`
 
+Note: This requires `unzip` to be available on your system.
+
 ## BrowserSync
 
 [BrowserSync](https://www.browsersync.io) detects changes in your theme files and automatically reloads the browser for you.
