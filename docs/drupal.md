@@ -175,7 +175,7 @@ See examples that you can copy and paste:
 
 ## Custom Kit
 
-Radix has support for custom kits. A custom kit has the default Radix themes files with customizations added.
+Radix has support for custom kits. A custom kit has the default Radix theme files with customizations added.
 
 To create a custom kit, there are a few conventions to follow:
 
