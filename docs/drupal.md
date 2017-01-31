@@ -173,6 +173,16 @@ See examples that you can copy and paste:
 * settings.local.php: https://gist.github.com/arshad/ce321088195b0834dfbd1dc92e585d99
 * local.services.yml: https://gist.github.com/arshad/f36883a614bb849984ce7b0046f7c677
 
+## Custom Kit
+
+Radix has support for custom kits. A custom kit has the default Radix themes files with customizations added.
+
+To create a custom kit, there are a few conventions to follow:
+
+1. Your kit must be prefixed with `radix-kit-`. Example `radix-kit-awesome`.
+2. The `.info.yml`, `.theme`, `.libraries`, `.breakpoints.yml`, `style.css` and `script.js` must have the same name as the kit. Example: `awesome.info.yml`, `awesome.theme`, `awesome.libraries`, `awesome.breakpoints.yml`, `awesome.style.css` and `awesome.script.js`.
+
+See the default kit as an example: https://github.com/radixtheme/radix/tree/8.x-3.x/kits/default
 
 # Support
 
