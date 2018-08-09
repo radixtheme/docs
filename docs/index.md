@@ -22,3 +22,6 @@ It has **Bootstrap**, **Sass**, **Gulp**, **Bower**, **BrowserSync** and **Font 
 
 **[Open Restaurant](http://open.restaurant)**
 - The Open Restaurant distribution has everything you need to kickstart your restaurant website. It comes with a menu management system, a reservation system, a customizable blog and events management.
+
+**[DKAN](http://getdkan.com)**
+- DKAN is a community-driven, free and open source open data platform that gives organizations and individuals ultimate freedom to publish and consume structured information.
