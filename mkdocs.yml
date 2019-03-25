@@ -3,6 +3,9 @@ theme: readthedocs
 repo_url: https://github.com/radixtheme/docs
 include_search: true
 pages:
-- Home: index.md
-- Drupal: drupal.md
-- Backdrop: backdrop.md
+  - Home: index.md
+  - Radix 4.x: radix-4.md
+  - Radix 3.x: radix-3.md
+  - Backdrop: backdrop.md
+markdown_extensions:
+  - admonition

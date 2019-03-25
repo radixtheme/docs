@@ -1,6 +1,10 @@
-Documentation for the Radix theme for Drupal.
+# Radix 4.x
+Documentation for Radix 3.x for Drupal.
 
-# Requirements
+!!! Tip
+    Starting a new project?. Consider [Radix 4.x](/radix-4) with **Bootstrap 4**.
+
+## Requirements
 
 1. [npm](https://www.npmjs.com) - [Read a guide on how to install Node and npm here](https://docs.npmjs.com/getting-started/installing-node).
 2. [Gulp](http://gulpjs.com) - `npm install gulp -g`

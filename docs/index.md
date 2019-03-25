@@ -1,13 +1,12 @@
 Radix is a base theme for [Drupal](http://drupal.org) and [Backdrop CMS](http://backdropcms.org). 
-It has **Bootstrap**, **Sass**, **Gulp**, **Bower**, **BrowserSync** and **Font Awesome** built-in.
+It has **Bootstrap**, **Sass**, **BrowserSync** and **Font Awesome** built-in.
 
 # Features
 
-* Components and plugins from Bootstrap.
-* Responsive Panels with Radix Layouts.
-* Sass, Gulp, BrowserSync and Font Awesome built-in.
-* Drush intergration: drush radix "My Subtheme".
-* Works with Bootswatch themes: drush radix "My Subtheme" --bootswatch=cerulean".
+* Components and plugins from Bootstrap
+* Responsive layouts with Radix Layouts
+* Sass, BrowserSync and Font Awesome built-in
+* Drush integration: `drush radix "My Subtheme"`
 
 # Distributions using Radix
 
@@ -22,3 +21,9 @@ It has **Bootstrap**, **Sass**, **Gulp**, **Bower**, **BrowserSync** and **Font 
 
 **[Open Restaurant](http://open.restaurant)**
 - The Open Restaurant distribution has everything you need to kickstart your restaurant website. It comes with a menu management system, a reservation system, a customizable blog and events management.
+
+**[DKAN Open Data Platform](https://getdkan.org/)**
+-DKAN is a community-driven, free and open source open data platform that gives organizations and individuals ultimate freedom to publish and consume structured information.
+
+**[University of IOWA SiteNow](https://sitenow.uiowa.edu/)**
+-SiteNow provides flexibility in authoring websites for various audiences.
