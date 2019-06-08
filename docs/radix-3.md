@@ -1,4 +1,4 @@
-# Radix 4.x
+# Radix 3.x
 Documentation for Radix 3.x for Drupal.
 
 !!! Tip
