@@ -6,7 +6,7 @@ It has **Bootstrap**, **Sass**, **BrowserSync** and **Font Awesome** built-in.
 * Components and plugins from Bootstrap
 * Responsive layouts with Radix Layouts
 * Sass, BrowserSync and Font Awesome built-in
-* Drush integration: `drush radix "My Subtheme"`
+* Drush integration
 
 # Distributions using Radix
 
@@ -26,4 +26,7 @@ It has **Bootstrap**, **Sass**, **BrowserSync** and **Font Awesome** built-in.
 -DKAN is a community-driven, free and open source open data platform that gives organizations and individuals ultimate freedom to publish and consume structured information.
 
 **[University of IOWA SiteNow](https://sitenow.uiowa.edu/)**
--SiteNow provides flexibility in authoring websites for various audiences.
+- SiteNow provides flexibility in authoring websites for various audiences.
+
+**[Apigee Developer Portal](https://www.drupal.org/project/apigee_devportal_kickstart)** 
+- Apigee Developer Kickstart is a distribution to create an Apigee developer portal using Drupal.
