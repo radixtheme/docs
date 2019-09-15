@@ -9,7 +9,7 @@ Documentation for Radix 4.x theme for Drupal 8.
 
 ## Quick start for Drupal 8
 
-1. Download and enable radix: `composer require drupal/radix`.
+1. Download and enable radix: `composer require drupal/radix; drush en components radix -y`.
 2. Create a subtheme: `drush --include="themes/contrib/radix" radix:create SUBTHEME NAME`.
 3. Set default theme: `drush en SUBTHEME_NAME -y; drush config-set system.theme default SUBTHEME_NAME -y`.
 4. Install required modules: `cd /path/to/SUBTHEME_NAME; npm install;`.
